@@ -18,3 +18,8 @@ Comando para obter a senha do administrador no Grafana.
 ```Bash
 kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
+
+### para aplycar multiplos deployments do kubectl
+kubectl apply -f . -R 
+
+### (-R para busca recursiva)
